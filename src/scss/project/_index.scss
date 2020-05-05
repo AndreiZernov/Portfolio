@@ -1,0 +1,116 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92vw;
+  overflow: hidden;
+  margin: 20px 3vw;
+  position: relative;
+  background: rgb(228, 228, 228);
+  -ms-box-shadow: 4px 7px 7px #bfbaad, 4px 0.5em 8px #a8a38c,
+    4px 12px 12px #a8a38c, inset 0 0 10px 5px rgb(236, 236, 236);
+  -moz-box-shadow: 4px 7px 7px #bfbaad, 4px 0.5em 8px #a8a38c,
+    4px 12px 12px #a8a38c, inset 0 0 10px 5px rgb(236, 236, 236);
+  -o-box-shadow: 4px 7px 7px #bfbaad, 4px 0.5em 8px #a8a38c,
+    4px 12px 12px #a8a38c, inset 0 0 10px 5px rgb(236, 236, 236);
+  -webkit-box-shadow: 4px 7px 7px #bfbaad, 4px 0.5em 8px #a8a38c,
+    4px 12px 12px #a8a38c, inset 0 0 10px 5px rgb(236, 236, 236);
+  box-shadow: 4px 7px 7px #bfbaad, 4px 0.5em 8px #a8a38c, 4px 12px 12px #a8a38c,
+    inset 0 0 10px 5px rgb(236, 236, 236);
+
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 10px 10px 20px;
+  max-height: 100%;
+  transition: 0.5s;
+
+  @media (min-width: 768px) {
+    margin: 20px auto;
+    width: 100%;
+    max-height: 550px;
+  }
+
+  & #info-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+
+    & h2 {
+      margin-right: 10px;
+    }
+  }
+
+  #project-subtitle {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  & h3,
+  & .project-links,
+  & .technologies {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+
+  & .project-links {
+    & a {
+      margin: 0 10px;
+    }
+  }
+
+  & .technologies {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+
+    & img {
+      width: 1.4rem;
+    }
+  }
+
+  & .images {
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 20px;
+    width: 100%;
+
+    & #laptop {
+      width: 90%;
+    }
+
+    & #tablet {
+      position: absolute;
+      height: 65%;
+      right: 12px;
+      bottom: 5px;
+    }
+
+    & #phone {
+      position: absolute;
+      height: 55%;
+      left: 12px;
+      bottom: 5px;
+    }
+  }
+
+  & p {
+    width: 87vw;
+    margin: 10px auto;
+    text-align: justify;
+    background: -webkit-linear-gradient(#000 50%, rgb(220, 220, 220));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
