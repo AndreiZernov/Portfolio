@@ -1,13 +1,15 @@
 .stack {
+  padding: 70px 10px;
+
   & h3,
   h2 {
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   & .applicationData,
-  & .Utilities,
+  & .utilities,
   & .devops,
   & .businessTools {
     display: flex;
@@ -34,7 +36,7 @@
   }
 
   & .applicationData div:hover,
-  & .Utilities div:hover,
+  & .utilities div:hover,
   & .devops div:hover,
   & .businessTools div:hover {
     border: 0.4px solid silver;

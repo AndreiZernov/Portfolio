@@ -22,7 +22,7 @@ const Project = ({ data }) => (
       <img id="phone" src={data.images.phone} alt="phone" />
     </div>
     <h3>Description</h3>
-    <div className="technologies">{data.technologies.map((tech) => tech)}</div>
+    <div className="technologies">{data.technologies}</div>
     <p>{data.description.substring(0, 270)}</p>
   </div>
 );
