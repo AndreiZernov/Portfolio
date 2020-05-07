@@ -6,63 +6,154 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaMarkdown,
-  FaLinux,
   FaGithub,
   FaGitSquare,
   FaNpm,
-  FaAtom,
   FaSketch,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { DiReact, DiGoogleCloudPlatform } from "react-icons/di";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const stackData = {
   applicationData: [
-    { img: <FaReact size="2.5rem" color="black" alt="react" />, name: "React" },
     {
-      img: <DiReact size="2.5rem" color="black" alt="React native" />,
+      img: (
+        <FaReact
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="react"
+        />
+      ),
+      name: "React",
+    },
+    {
+      img: (
+        <DiReact
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="React native"
+        />
+      ),
       name: "R Native",
     },
     {
-      img: <IoLogoJavascript size="2.5rem" color="black" alt="JavaScript" />,
+      img: (
+        <IoLogoJavascript
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="JavaScript"
+        />
+      ),
       name: "JavaScript",
     },
     {
-      img: <img src={require("../assets/redux.png")} alt="redux" />,
+      img: (
+        <img
+          className="d-block w-100"
+          src={require("../assets/redux.png")}
+          alt="redux"
+        />
+      ),
       name: "Redux",
     },
     {
-      img: <img src={require("../assets/graphql.png")} alt="graphql" />,
+      img: (
+        <img
+          className="d-block w-100"
+          src={require("../assets/graphql.png")}
+          alt="graphql"
+        />
+      ),
       name: "GraphQl",
     },
-    { img: <FaSass size="2.5rem" color="black" alt="sass" />, name: "Sass" },
     {
-      img: <img src={require("../assets/gatsby.png")} alt="gatsby" />,
+      img: (
+        <FaSass
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="sass"
+        />
+      ),
+      name: "Sass",
+    },
+    {
+      img: (
+        <img
+          className="d-block w-100"
+          src={require("../assets/gatsby.png")}
+          alt="gatsby"
+        />
+      ),
       name: "Gatsby",
     },
     {
-      img: <FaBootstrap size="2.5rem" color="black" alt="bootstrap" />,
+      img: (
+        <FaBootstrap
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="bootstrap"
+        />
+      ),
       name: "Bootstrap",
     },
-    { img: <FaHtml5 size="2.5rem" color="black" alt="Html5" />, name: "Html5" },
-    { img: <FaCss3Alt size="2.5rem" color="black" alt="css3" />, name: "CSS3" },
+    {
+      img: (
+        <FaHtml5
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="Html5"
+        />
+      ),
+      name: "Html5",
+    },
+    {
+      img: (
+        <FaCss3Alt
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="css3"
+        />
+      ),
+      name: "CSS3",
+    },
 
     {
-      img: <FaMarkdown size="2.5rem" color="black" alt="Markdown" />,
+      img: (
+        <FaMarkdown
+          className="d-block w-100"
+          size="2.5rem"
+          color="white"
+          alt="Markdown"
+        />
+      ),
       name: "Markdown",
     },
     {
-      img: <img src={require("../assets/babel.png")} alt="babel" />,
+      img: (
+        <img
+          className="d-block w-100"
+          src={require("../assets/babel.png")}
+          alt="babel"
+        />
+      ),
       name: "Babel",
     },
   ],
   devops: [
     {
-      img: <FaGithub size="2.5rem" color="black" alt="Github" />,
+      img: <FaGithub size="2.5rem" color="white" alt="Github" />,
       name: "Github",
     },
-    { img: <FaGitSquare size="2.5rem" color="black" alt="Git" />, name: "Git" },
-    { img: <FaNpm size="2.5rem" color="black" alt="Npm" />, name: "Npm" },
+    { img: <FaGitSquare size="2.5rem" color="white" alt="Git" />, name: "Git" },
+    { img: <FaNpm size="2.5rem" color="white" alt="Npm" />, name: "Npm" },
     {
       img: <img src={require("../assets/virtualbox.png")} alt="VirtualBox" />,
       name: "VirtualBox",
@@ -81,13 +172,13 @@ export const stackData = {
       name: "Firebase",
     },
     {
-      img: <DiGoogleCloudPlatform size="2.5rem" color="black" alt="gcp" />,
+      img: <DiGoogleCloudPlatform size="2.5rem" color="white" alt="gcp" />,
       name: "GCP",
     },
   ],
   businessTools: [
     {
-      img: <FaSketch size="2.5rem" color="black" alt="Sketch" />,
+      img: <FaSketch size="2.5rem" color="white" alt="Sketch" />,
       name: "Sketch",
     },
     {

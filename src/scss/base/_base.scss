@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   letter-spacing: 1px;
-  background-color: rgb(244, 244, 244);
+  background: rgb(244, 244, 244);
   color: black;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 1;
   color: black;
   text-decoration: none;
 }
