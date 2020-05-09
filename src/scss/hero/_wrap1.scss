@@ -1,0 +1,57 @@
+.wrap1 {
+  align-self: stretch;
+  grid-area: one;
+  width: 200px;
+  height: 200px;
+  background: rgb(15, 35, 42);
+
+  & .photo-wrap {
+    border: none;
+    box-shadow: none;
+  }
+
+  & .title-cube {
+    width: 200px;
+    height: 200px;
+    left: -30%;
+    top: 15%;
+    display: flex;
+    align-items: flex-end;
+
+    & h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  & a {
+    & h1,
+    & p,
+    #logo {
+      position: absolute;
+      text-align: center;
+    }
+    & #logo {
+      transform: rotate(-45deg);
+      width: 45px;
+      opacity: 0.7;
+      top: 10%;
+      left: 10%;
+    }
+    & h1 {
+      font-size: 2.2rem;
+      width: 300px;
+      top: 60%;
+      right: 0;
+      transform: rotate(-45deg) translateX(20%);
+    }
+    & p {
+      font-weight: 100;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      width: 200px;
+      top: 30%;
+      left: 60%;
+      transform: rotate(-45deg) translate(-50%, -50%);
+    }
+  }
+}

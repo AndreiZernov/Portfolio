@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  FaReact,
-  FaSass,
-  FaBootstrap,
-  FaApple,
-  FaAndroid,
-} from "react-icons/fa";
+import { FaReact, FaSass, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 export const projectsData = {
   reactFinder: {
-    name: "React Finder",
+    name: "React Finder Web",
     description:
       "Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials. This is React Web Application with the integration of React Context and Hooks, Auth0 Authentication with fast Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Formspree form backend email service, Lottie Animations.",
     images: {
@@ -23,17 +17,26 @@ export const projectsData = {
       github: "https://github.com/AndreiZernov/react-finder",
     },
     technologies: [
-      <FaReact key={1} size="1.4rem" color="black" alt="react" />,
-      <FaSass key={2} size="1.4rem" color="black" alt="sass" />,
-      <FaBootstrap key={3} size="1.4rem" color="black" alt="bootstrap" />,
-      <IoLogoJavascript key={4} size="1.4rem" color="black" alt="js" />,
-      <img key={5} src={require("../assets/auth0.png")} alt="auth0" />,
+      <FaReact key={1} size="2.5rem" color="white" alt="react" />,
+      <FaSass key={2} size="2.5rem" color="white" alt="sass" />,
+      <FaBootstrap key={3} size="2.5rem" color="white" alt="bootstrap" />,
+      <IoLogoJavascript key={4} size="2.5rem" color="white" alt="js" />,
+      <img key={5} src={require("../assets/auth0.svg")} alt="auth0" />,
       <img key={6} src={require("../assets/graphql.png")} alt="graphql" />,
       <img
         key={7}
         src={require("../assets/contentful.png")}
         alt="contentful"
       />,
+    ],
+    technologyInfo: [
+      "React: 16.13.0",
+      "Bootstrap 4: 4.4.1",
+      "Auth0 Authentication: 9.13.1",
+      "SASS: 4.13.1",
+      "Contentful: 7.14.3",
+      "React Lottie: 1.2.3",
+      "Formspree (backend service)",
     ],
   },
   multik: {
@@ -50,16 +53,24 @@ export const projectsData = {
       github: "https://github.com/AndreiZernov/multik",
     },
     technologies: [
-      <FaReact key={1} size="1.4rem" color="black" alt="react" />,
-      <FaSass key={2} size="1.4rem" color="black" alt="sass" />,
-      <FaBootstrap key={3} size="1.4rem" color="black" alt="bootstrap" />,
-      <IoLogoJavascript key={4} size="1.4rem" color="black" alt="js" />,
+      <FaReact key={1} size="2.5rem" color="white" alt="react" />,
+      <FaSass key={2} size="2.5rem" color="white" alt="sass" />,
+      <FaBootstrap key={3} size="2.5rem" color="white" alt="bootstrap" />,
+      <IoLogoJavascript key={4} size="2.5rem" color="white" alt="js" />,
       <img key={5} src={require("../assets/graphql.png")} alt="graphql" />,
       <img
         key={6}
         src={require("../assets/contentful.png")}
         alt="contentful"
       />,
+    ],
+    technologyInfo: [
+      "React: 16.13.0",
+      "SASS: 4.13.1",
+      "Bootstrap: 4.4.1",
+      "Contentful: 7.14.3",
+      "scrollmagic: 2.0.7",
+      "react-gsap: 1.2.0",
     ],
   },
   reactApp: {
@@ -72,14 +83,12 @@ export const projectsData = {
       phone: require("../assets/iphone-multik.png"),
     },
     links: {
-      website: "https://multik.netlify.app/",
-      github: "https://github.com/AndreiZernov/multik",
+      website: "https://expo.io/@andrewzer/react-finder",
+      github: "https://github.com/AndreiZernov/react-finder-native",
     },
     technologies: [
-      <FaApple key={1} size="1.4rem" color="black" alt="js" />,
-      <FaAndroid key={2} size="1.4rem" color="black" alt="js" />,
-      <FaReact key={3} size="1.4rem" color="black" alt="react" />,
-      <IoLogoJavascript key={4} size="1.4rem" color="black" alt="js" />,
+      <FaReact key={3} size="2.5rem" color="white" alt="react" />,
+      <IoLogoJavascript key={4} size="2.5rem" color="white" alt="js" />,
       <img key={5} src={require("../assets/graphql.png")} alt="graphql" />,
       <img key={6} src={require("../assets/redux.png")} alt="redux" />,
       <img
@@ -89,6 +98,15 @@ export const projectsData = {
       />,
       <img key={8} src={require("../assets/firebase.png")} alt="firebase" />,
       <img key={9} src={require("../assets/expo.png")} alt="expo" />,
+    ],
+    technologyInfo: [
+      "React: 16.9.0",
+      "React Redux: 7.2.0",
+      "Expo: 37.0.3",
+      "Styled Components: 5.1.0",
+      "Contentful: 7.14.2",
+      "Firebase: 7.14.0",
+      "Lottie: 3.3.2",
     ],
   },
 };

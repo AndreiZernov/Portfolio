@@ -14,8 +14,8 @@ body {
   overflow-x: hidden;
   width: 100vw;
   letter-spacing: 1px;
-  background: rgb(244, 244, 244);
-  color: black;
+  background: rgb(15, 35, 42);
+  color: white;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,21 +36,21 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
   text-align: center;
+  font-family: "Kaushan Script", cursive;
 }
 
 a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: white;
   background: none;
   transition: 0.5s;
   cursor: pointer;
 }
 
 a:hover {
-  opacity: 1;
-  color: black;
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -58,6 +58,17 @@ ul {
   padding-left: 20px;
 }
 
-.icons {
-  cursor: pointer;
+.background-img {
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../assets/wallpaper3.webp") no-repeat;
+  background-size: cover;
+}
+
+.back-img-dark {
+  opacity: 0.4;
 }

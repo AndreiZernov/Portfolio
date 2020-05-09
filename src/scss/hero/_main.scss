@@ -1,0 +1,125 @@
+.main-container {
+  display: grid;
+  height: 100%;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  grid-template-areas: "one" "two" "four" "three" "five";
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 300px 400px 450px 400px 300px;
+  padding: 10px 20px 80px;
+
+  @media (min-width: 768px) {
+    width: 70%;
+    justify-content: center;
+    transform: translateX(-5%);
+    grid-template-columns: 220px 180px;
+    grid-template-rows: 150px 220px 120px 320px;
+    align-items: center;
+    grid-template-areas: "one ..." " ... two" "four five " " ... three";
+    padding: 60px 110px 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(45deg);
+    grid-template-columns: none;
+    grid-template-rows: none;
+
+    grid-template-areas:
+      "... ... ..."
+      "... two three"
+      "one four five";
+    padding: 40px 0 0 80px;
+  }
+}
+
+.wrap1,
+.wrap2,
+.wrap3,
+.wrap4,
+.wrap5 {
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+  background: rgb(15, 35, 42);
+
+  color: white;
+  transform: rotate(45deg);
+
+  @media (min-width: 768px) {
+    margin: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    transform: rotate(0);
+  }
+
+  & .photo-wrap {
+    overflow: hidden;
+    border-radius: 20px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgb(15, 35, 42);
+    border: 0.5px solid #999;
+    box-shadow: 1px 1px 10px #888, inset 0 0 8px 0.5px #777;
+
+    & #photo1 {
+      position: absolute;
+      transform: rotate(-45deg) scale(0.8);
+      height: 520px;
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+
+    & #photo2,
+    & div {
+      transform: rotate(-45deg) scale(0.9);
+      transition: 0.5s;
+    }
+  }
+
+  & .photo-wrap:hover {
+    & #photo1,
+    & #photo2,
+    & div {
+      opacity: 1;
+      transform: rotate(-45deg) scale(1);
+    }
+  }
+
+  & .title-cube {
+    margin: 15px;
+    background: rgba(190, 3, 3, 0.6);
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+
+    & .links {
+      margin: 5px 0 0 20px;
+      & a {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & h2 {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 10px 20px 0;
+
+    @media (min-width: 768px) {
+      margin: 5px 20px 0;
+      font-size: 1.4rem;
+    }
+  }
+}

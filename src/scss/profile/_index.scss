@@ -1,0 +1,24 @@
+.profile {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: -270px;
+  left: 0;
+  right: 0;
+  display: none;
+
+  & h5 {
+  }
+
+  & p,
+  & a {
+    opacity: 0.8;
+    font-style: italic;
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}

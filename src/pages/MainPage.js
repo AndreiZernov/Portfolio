@@ -1,154 +1,57 @@
-import React from "react";
-import { projectsData } from "../data/projectsData";
+import React, { useEffect } from "react";
+import Hero from "../components/Hero";
+import Profile from "../components/Profile";
+import Footer from "../components/Footer";
+import animationData from "../assets/lottie-react-logo.json";
+import animationData2 from "../assets/lottie-react-firebase.json";
 import { stackData } from "../data/stackData";
-import { FaGithub, FaGlobe } from "react-icons/fa";
 
-const stackParts = [
-  { name: "technologies", class: "applicationData" },
-  { name: "DevOps", class: "devops" },
-  { name: "Other Tools", class: "businessTools" },
-];
+const MainPage = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
 
-const MainPage = () => (
-  <div className="page">
-    <div className="main-page">
-      <div className="main-wrap">
-        <div className="main-slider"></div>
-        <div className="main-slider2"></div>
-        <h2>{projectsData.multik.name}</h2>
-
-        <div className="project-links">
-          <a
-            href={projectsData.multik.links.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGlobe size="1.4em" color="black" alt="website" />
-          </a>
-          <a
-            href={projectsData.multik.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size="1.4em" color="black" alt="github" />
-          </a>
-        </div>
-        <div className="images">
-          <img
-            id="laptop"
-            src={projectsData.multik.images.laptop}
-            alt="laptop"
-          />
-          <img
-            id="tablet"
-            src={projectsData.multik.images.tablet}
-            alt="tablet"
-          />
-          <img id="phone" src={projectsData.multik.images.phone} alt="phone" />
-        </div>
+  return (
+    <div className="">
+      <div className="background-img" />
+      <div className="main-container page">
+        <Hero name="wrap1" linkNav="/contactme" subtitle="Contact Me" />
+        <Hero
+          websiteLink={"https://multik.netlify.app/"}
+          githubLink={"https://github.com/AndreiZernov/multik"}
+          name="wrap2"
+          linkNav="/projectMultic"
+          subtitle="Multik Web App"
+          img1={require("../assets/hero-multik1.webp")}
+          img2={require("../assets/hero-multik.png")}
+        />
+        <Hero
+          websiteLink={"https://react-finder.netlify.app/"}
+          githubLink={"https://github.com/AndreiZernov/react-finder"}
+          name="wrap3"
+          linkNav="/projectReactWeb"
+          subtitle="React Finder Web"
+          img1={require("../assets/hero-reactWeb.webp")}
+          img2={animationData}
+        />
+        <Hero
+          websiteLink={"https://expo.io/@andrewzer/react-finder"}
+          githubLink={"https://github.com/AndreiZernov/multik"}
+          name="wrap4"
+          linkNav="/projectReactApp"
+          subtitle="React Finder App"
+          img1={require("../assets/hero-reactApp.webp")}
+          img2={animationData2}
+        />
+        <Hero
+          stackData={stackData.hero}
+          name="wrap5"
+          linkNav="/mytechstack"
+          subtitle="My Tech Stack"
+        />
       </div>
-
-      <div className="main-wrap">
-        <div className="main-slider"></div>
-        <div className="main-slider2"></div>
-
-        <h2>{projectsData.reactFinder.name}</h2>
-
-        <div className="project-links">
-          <a
-            href={projectsData.reactFinder.links.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGlobe size="1.4em" color="black" alt="website" />
-          </a>
-          <a
-            href={projectsData.reactFinder.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size="1.4em" color="black" alt="github" />
-          </a>
-        </div>
-        <div className="images">
-          <img
-            id="laptop"
-            src={projectsData.reactFinder.images.laptop}
-            alt="laptop"
-          />
-          <img
-            id="tablet"
-            src={projectsData.reactFinder.images.tablet}
-            alt="tablet"
-          />
-          <img
-            id="phone"
-            src={projectsData.reactFinder.images.phone}
-            alt="phone"
-          />
-        </div>
-      </div>
-
-      <div className="main-wrap">
-        <div className="main-slider"></div>
-        <div className="main-slider2"></div>
-
-        <h2>{projectsData.reactApp.name}</h2>
-        <div className="project-links">
-          <a
-            href={projectsData.reactApp.links.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGlobe size="1.4em" color="black" alt="website" />
-          </a>
-          <a
-            href={projectsData.reactApp.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size="1.4em" color="black" alt="github" />
-          </a>
-        </div>
-        <div className="images">
-          <img
-            id="laptop"
-            src={projectsData.reactApp.images.laptop}
-            alt="laptop"
-          />
-          <img
-            id="tablet"
-            src={projectsData.reactApp.images.tablet}
-            alt="tablet"
-          />
-          <img
-            id="phone"
-            src={projectsData.reactApp.images.phone}
-            alt="phone"
-          />
-        </div>
-      </div>
-      <div className="main-wrap">
-        <div className="main-slider"></div>
-        <div className="main-slider2"></div>
-
-        <div className="stack">
-          <h2>My Tech Stack</h2>
-          {stackParts.map((part, i) => (
-            <div key={i} className={part.class}>
-              <h3>{part.name.toUpperCase()}</h3>
-              {stackData[part.class].map((item, i) => (
-                <div key={i}>
-                  {item.img}
-                  <p>{item.name}</p>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      <Profile />
+      <Footer />
     </div>
-  </div>
-);
+  );
+};
 
 export default MainPage;

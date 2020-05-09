@@ -1,137 +1,148 @@
-.main-projects {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
+#btn-back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+
+  cursor: pointer;
+}
+
+.project {
   margin: auto;
-  padding: 70px 0;
+  display: grid;
+  margin: 50px 10px;
+  justify-content: center;
+
+  & h1 {
+    width: 100vw;
+    grid-column: -1 / 1;
+  }
+
+  .links {
+    width: 100vw;
+    grid-column: -1 / 1;
+    display: flex;
+    justify-content: center;
+
+    & svg {
+      margin: 10px;
+    }
+  }
+
+  .description-wrap {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 20px auto;
+
+    & h5 {
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    & p {
+      text-align: justify;
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  .device-images {
+    padding-left: 20px;
+    width: 94%;
+    max-width: 470px;
+    height: 250px;
+    position: relative;
+    margin: 20px auto;
+
+    & img {
+      position: absolute;
+    }
+
+    #laptop {
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #tablet {
+      height: 80%;
+
+      top: 22%;
+      right: 0;
+    }
+    #phone {
+      height: 70%;
+
+      top: 28%;
+    }
+  }
+
+  & .technologies {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & svg,
+    & img {
+      margin: 10px;
+      width: 2.5rem;
+    }
+  }
+
+  & h2 {
+    grid-column: -1 / 1;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  & .technology-info {
+    grid-column: -1 / 1;
+    display: grid;
+    margin: 20px auto;
+    background: rgba(113, 122, 145, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px;
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 
   @media (min-width: 768px) {
-    padding: 70px 30px;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: baseline;
 
-    & div:nth-child(3) {
-      grid-column: -1/ 1;
-      max-height: 100%;
+    & .technologies {
+      grid-column: -1 /1;
     }
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: 30% 30% 30%;
-    padding: 70px 0;
-
-    & div:nth-child(3) {
-      grid-column: -1/ -2;
-      max-height: 550px;
-    }
-  }
-}
-
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  width: 92vw;
-  overflow: hidden;
-  margin: 20px 3vw;
-  position: relative;
-  padding: 10px 10px 20px;
-  max-height: 100%;
-  transition: 0.5s;
-
-  @media (min-width: 768px) {
-    margin: 20px auto;
-    width: 100%;
-    max-height: 550px;
-  }
-
-  & #info-link {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 70px;
+    grid-template-rows: 70px 40px 1fr;
     justify-content: center;
-    margin: 0 10px;
-
-    & h2 {
-      margin-right: 10px;
-    }
-  }
-
-  #project-subtitle {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  & h3,
-  & .project-links,
-  & .technologies {
-    width: 100%;
-    text-align: center;
-    margin: 5px;
-
-    & svg,
-    & img {
-      transition: 0.5s;
+    align-items: baseline;
+    & h1 {
+      grid-column: -2 / 1;
     }
 
-    & svg:hover,
-    & img:hover {
-      z-index: 3;
-      transform: scale(1.2);
-    }
-  }
-
-  & .project-links {
-    & a {
-      margin: 0 10px;
-    }
-  }
-
-  & .technologies {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-around;
-
-    & img {
-      width: 1.4rem;
-    }
-  }
-
-  & .images {
-    position: relative;
-    padding: 0 0 20px;
-    margin: 0 20px;
-    width: 100%;
-
-    & #laptop {
-      width: 90%;
+    & .links {
+      grid-column: -2 / 1;
     }
 
-    & #tablet {
-      position: absolute;
-      height: 65%;
-      right: 12px;
-      bottom: 5px;
+    & .technologies {
+      flex-direction: column;
+      margin: 0;
+      grid-column: -1 / -2;
+      grid-row: 1 / 4;
     }
-
-    & #phone {
-      position: absolute;
-      height: 55%;
-      left: 12px;
-      bottom: 5px;
-    }
-  }
-
-  & p {
-    width: 87vw;
-    margin: 10px auto;
-    text-align: justify;
-    background: -webkit-linear-gradient(#000 50%, rgb(220, 220, 220));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }

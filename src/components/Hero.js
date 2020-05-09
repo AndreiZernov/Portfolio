@@ -1,9 +1,7 @@
 import React from "react";
+import ProjectLinks from "./ProjectLinks";
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
-import Carousel from "react-bootstrap/Carousel";
-import { FaGithub, FaGlobe } from "react-icons/fa";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Hero = ({
   name,
@@ -18,7 +16,16 @@ const Hero = ({
 }) => {
   return (
     <div className={name}>
-      {name === "wrap1" && <h1>{title}</h1>}
+      {name === "wrap1" && (
+        <Link to={linkNav}>
+          <div className="photo-wrap">
+            <img id="logo" src={require("../assets/logo.svg")} alt="profLogo" />
+
+            <h1>Andrei Zernov</h1>
+            <p>Front End Software Engineer</p>
+          </div>
+        </Link>
+      )}
 
       {["wrap2", "wrap3", "wrap4"].includes(name) && (
         <Link to={linkNav}>
@@ -46,18 +53,26 @@ const Hero = ({
       )}
 
       <div className="title-cube">
-        <h2>{subtitle}</h2>
+        <Link to={linkNav}>
+          <h2>{subtitle}</h2>
+        </Link>
+
         {["wrap2", "wrap3", "wrap4"].includes(name) && (
-          <div className="links">
-            <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-              <FaGlobe size="1.4em" color="white" alt="website" />
-            </a>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <FaGithub size="1.4em" color="white" alt="github" />
-            </a>
-          </div>
+          <ProjectLinks websiteLink={websiteLink} githubLink={websiteLink} />
         )}
       </div>
+
+      {name === "wrap5" && (
+        <Link to={linkNav}>
+          <div className="photo-wrap">
+            <div className="stack-wrap">
+              {stackData.map((item) => (
+                <div>{item.img}</div>
+              ))}
+            </div>
+          </div>
+        </Link>
+      )}
     </div>
   );
 };
