@@ -2,7 +2,6 @@
   grid-area: five;
   width: 200px;
   height: 200px;
-  background: black;
   display: flex;
   align-self: stretch;
   background: rgb(15, 35, 42);
@@ -72,7 +71,6 @@
   & .title-cube {
     width: 200px;
     height: 200px;
-
     display: flex;
     left: -30%;
     top: 0%;

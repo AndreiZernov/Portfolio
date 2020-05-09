@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Kaushan+Script&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -434,6 +435,10 @@ ul {
   transform: rotate(-90deg);
 }
 
+.wrap4 .title-cube .links {
+  margin: 5px 20px 8px;
+}
+
 @media (min-width: 768px) {
   .wrap4 .title-cube {
     transform: rotate(0);
@@ -444,15 +449,10 @@ ul {
   }
 }
 
-.wrap4 .title-cube .links {
-  margin: 5px 20px 8px;
-}
-
 .wrap5 {
   grid-area: five;
   width: 200px;
   height: 200px;
-  background: black;
   display: flex;
   align-self: stretch;
   background: #0f232a;
@@ -547,6 +547,75 @@ ul {
   margin-bottom: 15px;
 }
 
+.contact-links a {
+  margin-right: 1vw;
+}
+
+.contact-links p {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  width: 85%;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+footer div {
+  display: inline;
+}
+
+footer span {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 786px) {
+  footer {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  footer span {
+    font-size: 1rem;
+    text-align: right;
+  }
+}
+
+.profile {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: -270px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.profile p,
+.profile a {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .profile {
+    display: flex;
+  }
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -578,84 +647,6 @@ ul {
 .contact-me .contact-links p {
   opacity: 0.8;
   display: inline;
-}
-
-.stack {
-  padding: 70px 10px;
-}
-
-.stack h3,
-.stack h2 {
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
-  font-family: "Kaushan Script", cursive;
-}
-
-.stack .applicationData,
-.stack .utilities,
-.stack .devops,
-.stack .businessTools {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.stack .applicationData div,
-.stack .utilities div,
-.stack .devops div,
-.stack .businessTools div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px;
-  transition: 0.5s;
-  width: 90px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.stack .applicationData div p,
-.stack .utilities div p,
-.stack .devops div p,
-.stack .businessTools div p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-.stack .applicationData div:hover,
-.stack .utilities div:hover,
-.stack .devops div:hover,
-.stack .businessTools div:hover {
-  border: 0.4px solid silver;
-  box-shadow: 2px 2px 7px silver;
-  transform: scale(1.1);
-}
-
-.profile {
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-  margin: auto;
-  position: absolute;
-  bottom: -270px;
-  left: 0;
-  right: 0;
-  display: none;
-}
-
-.profile p,
-.profile a {
-  opacity: 0.8;
-  font-style: italic;
-}
-
-@media (min-width: 1024px) {
-  .profile {
-    display: flex;
-  }
 }
 
 #btn-back {
@@ -815,49 +806,58 @@ ul {
   }
 }
 
-footer {
-  position: fixed;
-  width: 85%;
-  margin: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.stack {
+  padding: 70px 10px;
+}
+
+.stack h3,
+.stack h2 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Kaushan Script", cursive;
+}
+
+.stack .applicationData,
+.stack .utilities,
+.stack .devops,
+.stack .businessTools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack .applicationData div,
+.stack .utilities div,
+.stack .devops div,
+.stack .businessTools div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: center;
+  margin: 0 5px;
+  transition: 0.5s;
+  width: 90px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-footer div {
-  display: inline;
-}
-
-footer span {
+.stack .applicationData div p,
+.stack .utilities div p,
+.stack .devops div p,
+.stack .businessTools div p {
+  margin: 0;
   font-size: 0.9rem;
-  text-align: center;
 }
 
-@media (min-width: 786px) {
-  footer {
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  footer span {
-    font-size: 1rem;
-    text-align: right;
-  }
-}
-
-.contact-links a {
-  margin-right: 1vw;
-}
-
-.contact-links p {
-  display: none;
+.stack .applicationData div:hover,
+.stack .utilities div:hover,
+.stack .devops div:hover,
+.stack .businessTools div:hover {
+  border: 0.4px solid silver;
+  box-shadow: 2px 2px 7px silver;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=app.css.map */

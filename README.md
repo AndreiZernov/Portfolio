@@ -6,7 +6,7 @@
 <h1 align="center">My Professional Portfolio</h1>
 
 [![Website multik.netlify.app](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](https://multik.netlify.app/)
-[![Build Status](https://travis-ci.com/AndreiZernov/multik.svg?branch=master)](https://travis-ci.com/AndreiZernov/multik)
+[![Build Status](https://travis-ci.com/AndreiZernov/Portfolio.svg?branch=master)](https://travis-ci.com/AndreiZernov/Portfolio)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f35798e9b8ab45c49600f5b66cd61abe)](https://www.codacy.com/manual/AndreiZernov/multik?utm_source=github.com&utm_medium=referral&utm_content=AndreiZernov/multik&utm_campaign=Badge_Grade) <img src="./test_results/lighthouse.svg"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
