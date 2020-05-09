@@ -30,6 +30,7 @@
       position: absolute;
       text-align: center;
     }
+
     & #logo {
       transform: rotate(-45deg);
       width: 45px;
@@ -37,6 +38,7 @@
       top: 10%;
       left: 10%;
     }
+
     & h1 {
       font-size: 2.2rem;
       width: 300px;
@@ -44,6 +46,7 @@
       right: 0;
       transform: rotate(-45deg) translateX(20%);
     }
+
     & p {
       font-weight: 100;
       font-size: 0.9rem;

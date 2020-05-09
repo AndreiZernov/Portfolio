@@ -3,12 +3,10 @@
   top: 30px;
   left: 30px;
   z-index: 2;
-
   cursor: pointer;
 }
 
 .project {
-  margin: auto;
   display: grid;
   margin: 50px 10px;
   justify-content: center;
@@ -63,15 +61,15 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
     #tablet {
       height: 80%;
-
       top: 22%;
       right: 0;
     }
+
     #phone {
       height: 70%;
-
       top: 28%;
     }
   }
@@ -110,6 +108,7 @@
       grid-template-columns: repeat(2, 1fr);
       padding: 40px;
     }
+
     @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -130,6 +129,7 @@
     grid-template-rows: 70px 40px 1fr;
     justify-content: center;
     align-items: baseline;
+
     & h1 {
       grid-column: -2 / 1;
     }
