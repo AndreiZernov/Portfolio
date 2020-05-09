@@ -58,7 +58,7 @@ const Hero = ({
         </Link>
 
         {["wrap2", "wrap3", "wrap4"].includes(name) && (
-          <ProjectLinks websiteLink={websiteLink} githubLink={websiteLink} />
+          <ProjectLinks websiteLink={websiteLink} githubLink={githubLink} />
         )}
       </div>
 

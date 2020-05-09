@@ -34,7 +34,7 @@ const MainPage = () => {
         />
         <Hero
           websiteLink={"https://expo.io/@andrewzer/react-finder"}
-          githubLink={"https://github.com/AndreiZernov/multik"}
+          githubLink={"https://github.com/AndreiZernov/react-finder-native"}
           name="wrap4"
           linkNav="/projectReactApp"
           subtitle="React Finder App"

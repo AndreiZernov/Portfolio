@@ -14,7 +14,7 @@ const Profile = () => {
       </div>
       <div>
         <h5>CV:</h5>
-        <a href={pdf} target="_blank">
+        <a href={pdf} target="_blank" rel="noopener noreferrer">
           Download
         </a>
       </div>
