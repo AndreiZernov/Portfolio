@@ -35,9 +35,9 @@ Project is created with:
 <p align="center">Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials. This is React Web Application with the integration of React Context and Hooks, Auth0 Authentication with fast Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Formspree form backend email service, Lottie Animations.</p>
 
 <div className="device-images">
-  <img id="laptop" src={require("./src/assets/macbook-reactfinder.png")} alt="laptop" />
-  <img id="tablet" src={require("./src/assets/ipad-reactfinder.png")} alt="tablet" />
-  <img id="phone" src={require("./src/assets/iphone-reactfinder.png")} alt="phone" />
+  <img id="laptop" src="./src/assets/macbook-reactfinder.png" alt="laptop" />
+  <img id="tablet" src="./src/assets/ipad-reactfinder.png" alt="tablet" />
+  <img id="phone" src="./src/assets/iphone-reactfinder.png" alt="phone" />
 </div>
 
 <h3 align="center">Multik Collection</h3>
@@ -45,18 +45,18 @@ Project is created with:
 <p align="center">Gallery of Projects and Photo Collection for Professional Photographer MLTK, React Progressive Web Application with the integration of React Context and Hooks, SASS, QraphQl, Bootstrap component library, Animation with ScrollMagic and GSAP libraries.</p>
 
 <div className="device-images">
-  <img id="laptop" src={require("./src/assets/macbook-multik.png")} alt="laptop" />
-  <img id="tablet" src={require("./src/assets/ipad-multik.png")} alt="tablet" />
-  <img id="phone" src={require("./src/assets/iphone-multik.png")} alt="phone" />
+  <img id="laptop" src="./src/assets/macbook-multik.png" alt="laptop" />
+  <img id="tablet" src="./src/assets/ipad-multik.png" alt="tablet" />
+  <img id="phone" src="./src/assets/iphone-multik.png" alt="phone" />
 </div>
 
 <h3 align="center">React Finder App</h3>
 
 <p align="center">This is React Native Application with the integration of Redux, Firebase Authentication, QraphQl (all data published and managed at Contentful), Styled Components, Lottie Animations. Project fully ready for IOS, Android deployment. Responsive Design for Tablets and Phones. Published at Expo Store. Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.</p>
 
-<img id="laptop" src={require("./src/assets/macbook-reactnative.png")} alt="laptop" />
-<img id="tablet" src={require("./src/assets/ipad-reactnative.png")} alt="tablet" />
-<img id="phone" src={require("./src/assets/iphone-reactnative.png")} alt="phone" />
+<img id="laptop" src="./src/assets/macbook-reactnative.png" alt="laptop" />
+<img id="tablet" src="./src/assets/ipad-reactnative.png" alt="tablet" />
+<img id="phone" src="./src/assets/iphone-reactnative.png" alt="phone" />
 
 </div>
 
