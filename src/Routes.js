@@ -1,11 +1,12 @@
 import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage";
 import TechStackPage from "./pages/TechStackPage";
 import ContactMePage from "./pages/ContactMePage";
+import NotFoundPage from "./pages/NotFoundPage";
+
 import { projectsData } from "./data/projectsData";
 
 const Routes = () => {
@@ -31,7 +32,7 @@ const Routes = () => {
             <Route path="/mytechstack" component={TechStackPage} />
             <Route path="/contactme" component={ContactMePage} />
 
-            {/* <Route component={NotFoundPage} /> */}
+            <Route component={NotFoundPage} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

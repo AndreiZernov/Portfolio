@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ProjectLinks from "./ProjectLinks";
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
@@ -75,6 +76,18 @@ const Hero = ({
       )}
     </div>
   );
+};
+
+Hero.propTypes = {
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  img1: PropTypes.element.isRequired,
+  img2: PropTypes.element.isRequired,
+  linkNav: PropTypes.string.isRequired,
+  websiteLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+  stackData: PropTypes.object.isRequired,
 };
 
 export default Hero;

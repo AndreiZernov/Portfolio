@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import pdf from "../assets/Andrei_Zernov_CV.pdf";
 
-const ContactMePage = ({ data }) => {
+const ContactMePage = () => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (

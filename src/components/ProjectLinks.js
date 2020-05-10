@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectLinks = ({ websiteLink, githubLink }) => (
@@ -11,5 +12,10 @@ const ProjectLinks = ({ websiteLink, githubLink }) => (
     </a>
   </div>
 );
+
+ProjectLinks.propTypes = {
+  websiteLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+};
 
 export default ProjectLinks;

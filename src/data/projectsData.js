@@ -78,9 +78,9 @@ export const projectsData = {
     description:
       "This is React Native Application with the integration of Redux, Firebase Authentication, QraphQl (all data published and managed at Contentful), Styled Components, Lottie Animations. Project fully ready for IOS, Android deployment. Responsive Design for Tablets and Phones. Published at Expo Store. Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.",
     images: {
-      laptop: require("../assets/ipad-multik.png"),
-      tablet: require("../assets/iphone-multik.png"),
-      phone: require("../assets/iphone-multik.png"),
+      laptop: require("../assets/ipad-reactnative.png"),
+      tablet: require("../assets/iphone-reactnative.png"),
+      phone: require("../assets/galaxy-reactnative.png"),
     },
     links: {
       website: "https://expo.io/@andrewzer/react-finder",

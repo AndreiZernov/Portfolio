@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import ProjectLinks from "../components/ProjectLinks";
 import DeviceImages from "../components/DeviceImages";
 import { Link } from "react-router-dom";
@@ -35,6 +36,10 @@ const ProjectPage = ({ data }) => {
       </div>
     </div>
   );
+};
+
+ProjectPage.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default ProjectPage;

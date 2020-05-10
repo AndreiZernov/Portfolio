@@ -29,7 +29,7 @@ const MainPage = () => {
           name="wrap3"
           linkNav="/projectReactWeb"
           subtitle="React Finder Web"
-          img1={require("../assets/hero-reactWeb.webp")}
+          img1={require("../assets/hero-reactWeb1.webp")}
           img2={animationData}
         />
         <Hero
@@ -38,7 +38,7 @@ const MainPage = () => {
           name="wrap4"
           linkNav="/projectReactApp"
           subtitle="React Finder App"
-          img1={require("../assets/hero-reactApp.webp")}
+          img1={require("../assets/hero-reactApp1.webp")}
           img2={animationData2}
         />
         <Hero
