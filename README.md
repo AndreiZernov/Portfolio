@@ -30,34 +30,40 @@ Project is created with:
 
 <p align="center">To launch this project, go to https://andreizernov.netlify.app/</p>
 
-<h3 align="center"> Navigation on Main Page</h3>
+<h3 align="center"> 1. React Finder Web </h3>
 
-<p align="center">Loading page waiting for a request from Contentful.</p>
+<p align="center">Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials. This is React Web Application with the integration of React Context and Hooks, Auth0 Authentication with fast Github and Google Login, QraphQl (all data published and managed at Contentful), Bootstrap component library, Formspree form backend email service, Lottie Animations.</p>
 
-<div align="center">
-  <img src="./src/assets/readme1.gif">
+<div className="device-images">
+  <img id="laptop" src={require("../assets/macbook-reactfinder.png")} alt="laptop" />
+  <img id="tablet" src={require("../assets/ipad-reactfinder.png")} alt="tablet" />
+  <img id="phone" src={require("../assets/iphone-reactfinder.png")} alt="phone" />
 </div>
 
-<h3 align="center">Navigation through the Project's pages</h3>
+<h3 align="center">Multik Collection</h3>
 
-<p align="center">Added gallery with Grid layout as well as Photo Carousel for zoom in interesting photos, basic info about Collection.</p>
+<p align="center">Gallery of Projects and Photo Collection for Professional Photographer MLTK, React Progressive Web Application with the integration of React Context and Hooks, SASS, QraphQl, Bootstrap component library, Animation with ScrollMagic and GSAP libraries.</p>
 
-<div align="center">
-  <img src="./src/assets/readme2.gif">
+<div className="device-images">
+  <img id="laptop" src={require("../assets/macbook-multik.png")} alt="laptop" />
+  <img id="tablet" src={require("../assets/ipad-multik.png")} alt="tablet" />
+  <img id="phone" src={require("../assets/iphone-multik.png")} alt="phone" />
 </div>
 
-<h3 align="center"> Animation with GSAP and ScrollMagic</h3>
+<h3 align="center">React Finder App</h3>
 
-<p align="center">Zoom in/out of centered photo and slide to the next category</p>
+<p align="center">This is React Native Application with the integration of Redux, Firebase Authentication, QraphQl (all data published and managed at Contentful), Styled Components, Lottie Animations. Project fully ready for IOS, Android deployment. Responsive Design for Tablets and Phones. Published at Expo Store. Application created for community as links to Free Helpful Resources, which cover React, React Native, Redux and GraphQl materials.</p>
 
-<div align="center">
-  <img src="./src/assets/readme3.gif">
+<img id="laptop" src={require("../assets/macbook-reactnative.png")} alt="laptop" />
+<img id="tablet" src={require("../assets/ipad-reactnative.png")} alt="tablet" />
+<img id="phone" src={require("../assets/iphone-reactnative.png")} alt="phone" />
+
 </div>
 
 <h3 align="center">Responsive Design</h3>
 
 <div align="center">
-  <img src="./src/assets/readme4.gif">
+  <img src="./src/assets/readme.gif">
 </div>
 
 ---
@@ -70,9 +76,11 @@ Project is created with:
 
 Reach out to me at one of the following places!
 
+Website at [Andrei Zernov](https://andreizernov.netlify.app/)
+
 Twitter at [AndrewZ](https://twitter.com/AndrewZer)
 
-LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
+LinkedIn at [Andrei Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
 ---
 
@@ -80,6 +88,6 @@ LinkedIn at [Andrew Zernov](https://www.linkedin.com/in/andrei-zernov/)
 
 MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiZernov/react-finder/blob/master/LICENSE)
 
-Copyright 2020 © Artem Zuev
+Copyright 2020 © Andrei Zernov
 
 </div>
