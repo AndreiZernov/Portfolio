@@ -104,6 +104,14 @@ ul {
   transition: opacity 300ms linear;
 }
 
+.contact-links a {
+  margin-right: 1vw;
+}
+
+.contact-links p {
+  display: none;
+}
+
 .main-container {
   display: grid;
   height: 100%;
@@ -547,12 +555,28 @@ ul {
   margin-bottom: 15px;
 }
 
-.contact-links a {
-  margin-right: 1vw;
+.profile {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  right: 0;
+  display: none;
 }
 
-.contact-links p {
-  display: none;
+.profile p,
+.profile a {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .profile {
+    display: flex;
+  }
 }
 
 footer {
@@ -592,30 +616,6 @@ footer span {
   }
 }
 
-.profile {
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-  margin: auto;
-  position: absolute;
-  bottom: -270px;
-  left: 0;
-  right: 0;
-  display: none;
-}
-
-.profile p,
-.profile a {
-  opacity: 0.8;
-  font-style: italic;
-}
-
-@media (min-width: 1024px) {
-  .profile {
-    display: flex;
-  }
-}
-
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -627,6 +627,17 @@ footer span {
   margin: 10px 0;
 }
 
+.contact-me .cv {
+  display: flex;
+  margin: 0 0 10px;
+  align-items: center;
+}
+
+.contact-me .cv a {
+  margin-left: 10px;
+  color: lightblue;
+}
+
 .contact-me p {
   text-align: justify;
   padding-left: 20px;
@@ -636,8 +647,8 @@ footer span {
   opacity: 0.7;
 }
 
-.contact-me p:nth-child(3) {
-  max-width: 600px;
+.contact-me p:nth-child(4) {
+  max-width: 650px;
 }
 
 .contact-me .contact-links a {

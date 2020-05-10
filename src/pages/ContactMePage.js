@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ContactLinks from "../components/ContactLinks";
 import { Link } from "react-router-dom";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+import pdf from "../assets/Andrei_Zernov_CV.pdf";
 
 const ContactMePage = ({ data }) => {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -16,6 +17,12 @@ const ContactMePage = ({ data }) => {
       <div className="page contact-me">
         <h1>Andrei Zernov</h1>
         <p>Front End Software Engineer</p>
+        <div className="cv">
+          <h5>CV:</h5>
+          <a href={pdf} target="_blank" rel="noopener noreferrer">
+            Download
+          </a>
+        </div>
         <p>
           I am a Front-End Software Engineer with extensive knowledge of Network
           and Cybersecurity Concepts. I have a Master’s Degree in Business
@@ -29,7 +36,6 @@ const ContactMePage = ({ data }) => {
           as a whole.
         </p>
         <ContactLinks />
-        {/* <a href="link/to/your/download/file" download>Download link</a> */}
       </div>
     </div>
   );
