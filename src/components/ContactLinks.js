@@ -29,16 +29,15 @@ const FooterContent = [
 const ContactLinks = () => (
   <div className="contact-links">
     {FooterContent.map((link) => (
-      <div>
-        <a
-          key={link.id}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <div key={link.id}>
+        <a href={link.url} target="_blank" rel="noopener noreferrer">
           {link.img}
         </a>
-        <p>{link.info}</p>
+        <p>
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            {link.info}
+          </a>
+        </p>
       </div>
     ))}
     <OverlayTrigger

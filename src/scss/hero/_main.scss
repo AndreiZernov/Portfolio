@@ -1,28 +1,29 @@
 .main-container {
   display: grid;
-  height: 100%;
-  max-width: 800px;
-  width: 90%;
-  margin: auto;
   grid-template-areas: "one" "two" "four" "three" "five";
   justify-content: center;
   align-items: center;
+  overflow: auto;
+  margin: auto;
   grid-template-rows: 300px 400px 450px 400px 300px;
-  padding: 10px 20px 80px;
+  padding: 10px 10px 80px;
 
   @media (min-width: 768px) {
-    width: 70%;
+    overflow: visible;
+  }
+
+  @media (min-width: 768px) {
     justify-content: center;
-    transform: translateX(-5%);
     grid-template-columns: 220px 180px;
     grid-template-rows: 150px 220px 120px 320px;
     align-items: center;
     grid-template-areas: "one ..." " ... two" "four five " " ... three";
-    padding: 60px 110px 0 0;
+    padding: 60px 170px 180px 0;
   }
 
   @media (min-width: 1024px) {
     width: 100%;
+    max-width: 1000px;
     align-items: center;
     justify-content: center;
     transform: rotate(45deg);

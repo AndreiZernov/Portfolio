@@ -5,6 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1000px;
+
+  & p {
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+  }
 }
 
 #not-found-btn {

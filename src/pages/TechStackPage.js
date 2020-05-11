@@ -12,12 +12,11 @@ const stackParts = [
 const TechStackPage = () => {
   useEffect(() => window.scrollTo(0, 0), []);
   return (
-    <div>
-      <Link id="btn-back" to="/">
-        <FaArrowAltCircleLeft size="2rem" color="silver" alt="go back" />
-      </Link>
-      <div className="background-img back-img-dark" />
-      <div className="stack page">
+    <div className="background-image">
+      <div className="stack">
+        <Link id="btn-back" to="/">
+          <FaArrowAltCircleLeft size="35px" color="silver" alt="go back" />
+        </Link>
         <h1>My Tech Stack</h1>
         {stackParts.map((part, i) => (
           <div key={i} className={part.class}>

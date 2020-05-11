@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <ContactLinks />
       <span>
-        &copy; Copyright {data.getFullYear()}, Andrew Zernov. All Rights
+        &copy; Copyright {data.getFullYear()}, Andrei Zernov. All Rights
         Reserved
       </span>
     </footer>

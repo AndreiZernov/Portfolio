@@ -8,13 +8,11 @@ const ContactMePage = () => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <div>
-      <Link id="btn-back" to="/">
-        <FaArrowAltCircleLeft size="2rem" color="silver" alt="go back" />
-      </Link>
-      <div className="background-img back-img-dark" />
-
-      <div className="page contact-me">
+    <div className="background-image">
+      <div className="contact-me">
+        <Link id="btn-back" to="/">
+          <FaArrowAltCircleLeft size="35px" color="silver" alt="go back" />
+        </Link>
         <h1>Andrei Zernov</h1>
         <p>Front End Software Engineer</p>
         <div className="cv">

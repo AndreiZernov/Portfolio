@@ -10,9 +10,8 @@ const MainPage = () => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <div className="">
-      <div className="background-img" />
-      <div className="main-container page">
+    <div className="background-image">
+      <div className="main-container">
         <Hero name="wrap1" linkNav="/contactme" subtitle="Contact Me" />
         <Hero
           websiteLink={"https://multik.netlify.app/"}

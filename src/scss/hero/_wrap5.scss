@@ -55,19 +55,6 @@
     }
   }
 
-  & .stack-wrap:hover {
-    transform: scale(1.1) rotate(-45deg) translateY(-5%);
-
-    & div {
-      transform: rotate(0deg);
-    }
-
-    & img,
-    & svg {
-      filter: brightness(1) invert(0);
-    }
-  }
-
   & .title-cube {
     width: 200px;
     height: 200px;
@@ -86,6 +73,18 @@
 
     & h2 {
       margin-bottom: 15px;
+    }
+  }
+  & .stack-wrap:hover {
+    transform: scale(1.1) rotate(-45deg) translateY(-5%);
+
+    & div {
+      transform: rotate(0deg);
+    }
+
+    & img,
+    & svg {
+      filter: brightness(1) invert(0);
     }
   }
 }

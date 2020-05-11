@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Hero = ({
   name,
-  title,
   subtitle,
   img1,
   img2,
@@ -67,8 +66,8 @@ const Hero = ({
         <Link to={linkNav}>
           <div className="photo-wrap">
             <div className="stack-wrap">
-              {stackData.map((item) => (
-                <div>{item.img}</div>
+              {stackData.map((item, i) => (
+                <div key={i}>{item.img}</div>
               ))}
             </div>
           </div>
@@ -80,14 +79,13 @@ const Hero = ({
 
 Hero.propTypes = {
   name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  img1: PropTypes.element.isRequired,
-  img2: PropTypes.element.isRequired,
+  img1: PropTypes.string,
+  img2: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   linkNav: PropTypes.string.isRequired,
-  websiteLink: PropTypes.string.isRequired,
-  githubLink: PropTypes.string.isRequired,
-  stackData: PropTypes.object.isRequired,
+  websiteLink: PropTypes.string,
+  githubLink: PropTypes.string,
+  stackData: PropTypes.array,
 };
 
 export default Hero;

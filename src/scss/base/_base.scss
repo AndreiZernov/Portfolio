@@ -6,19 +6,27 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.4;
-  overflow-x: hidden;
-  width: 100vw;
+  overflow-x: scroll;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    rgb(35, 55, 62) url("../assets/wallpaper3.webp") no-repeat center fixed;
+  background-size: cover, cover;
   letter-spacing: 1px;
-  background: rgb(15, 35, 42);
   color: white;
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (min-width: 768px) {
+    overflow-x: hidden;
+  }
 }
 
 body::-webkit-scrollbar {
@@ -58,17 +66,15 @@ ul {
   padding-left: 20px;
 }
 
-.background-img {
-  position: fixed;
-  z-index: -2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("../assets/wallpaper3.webp") no-repeat;
-  background-size: cover;
+.background-image {
+  height: 100%;
+  width: 100%;
 }
 
-.back-img-dark {
-  opacity: 0.4;
+#btn-back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  cursor: pointer;
 }

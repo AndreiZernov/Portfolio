@@ -9,14 +9,21 @@ const ProjectPage = ({ data }) => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <div>
-      <Link id="btn-back" to="/">
-        <FaArrowAltCircleLeft size="2rem" color="silver" alt="go back" />
-      </Link>
-      <div className="background-img back-img-dark" />
-
-      <div className="project page">
-        <h1>{data.name}</h1>
+    <div className="background-image">
+      <div className="project">
+        <Link id="btn-back" to="/">
+          <FaArrowAltCircleLeft size="35px" color="silver" alt="go back" />
+        </Link>
+        <h1>
+          <a
+            href={data.links.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="device-images"
+          >
+            {data.name}
+          </a>
+        </h1>
         <ProjectLinks
           websiteLink={data.links.website}
           githubLink={data.links.github}
@@ -29,8 +36,8 @@ const ProjectPage = ({ data }) => {
         <div className="technologies">{data.technologies}</div>
         <h2>Technologies</h2>
         <ul className="technology-info">
-          {data.technologyInfo.map((i) => (
-            <li>{i}</li>
+          {data.technologyInfo.map((info, i) => (
+            <li key={i}>{info}</li>
           ))}
         </ul>
       </div>
