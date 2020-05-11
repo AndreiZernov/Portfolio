@@ -3,7 +3,6 @@
   justify-content: space-around;
   width: 80%;
   margin: -50px auto 20px;
-  padding: 0 0 80px;
   max-width: 1000px;
 
   & p,
@@ -12,14 +11,18 @@
     font-style: italic;
   }
 
+  & a {
+    color: lightblue;
+  }
+
   @media (min-width: 768px) {
     margin: auto;
-    padding: 0 0 80px;
+    padding: 0 0 30px;
     display: flex;
   }
 
   @media (min-width: 1024px) {
     display: flex;
-    padding: 168px 0 80px;
+    padding: 150px 0 40px;
   }
 }

@@ -10,7 +10,7 @@ const MainPage = () => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <div className="background-image">
+    <div>
       <div className="main-container">
         <Hero name="wrap1" linkNav="/contactme" subtitle="Contact Me" />
         <Hero
@@ -19,7 +19,7 @@ const MainPage = () => {
           name="wrap2"
           linkNav="/projectMultic"
           subtitle="Multik Web App"
-          img1={require("../assets/hero-multik1.webp")}
+          img1={require("../assets/hero-multik.jpg")}
           img2={require("../assets/hero-multik.png")}
         />
         <Hero
@@ -28,7 +28,7 @@ const MainPage = () => {
           name="wrap3"
           linkNav="/projectReactWeb"
           subtitle="React Finder Web"
-          img1={require("../assets/hero-reactWeb1.webp")}
+          img1={require("../assets/hero-reactWeb.jpg")}
           img2={animationData}
         />
         <Hero
@@ -37,7 +37,7 @@ const MainPage = () => {
           name="wrap4"
           linkNav="/projectReactApp"
           subtitle="React Finder App"
-          img1={require("../assets/hero-reactApp1.webp")}
+          img1={require("../assets/hero-reactApp.jpg")}
           img2={animationData2}
         />
         <Hero

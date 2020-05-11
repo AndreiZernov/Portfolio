@@ -6,13 +6,10 @@
   overflow-x: hidden;
   margin: auto;
   grid-template-rows: 300px 400px 450px 400px 300px;
-  padding: 10px 10px 80px;
+  padding: 10px 0 80px;
 
   @media (min-width: 768px) {
     overflow: visible;
-  }
-
-  @media (min-width: 768px) {
     justify-content: center;
     grid-template-columns: 220px 180px;
     grid-template-rows: 150px 220px 120px 320px;
@@ -95,7 +92,6 @@
   }
 
   & .title-cube {
-    margin: 15px;
     background: rgba(190, 3, 3, 0.6);
     position: absolute;
     border-radius: 20px;

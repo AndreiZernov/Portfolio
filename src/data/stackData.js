@@ -20,16 +20,20 @@ export const stackData = {
   hero: [
     {
       img: (
-        <IoLogoJavascript color="rgba(236, 234, 7, 0.94)" alt="JavaScript" />
+        <IoLogoJavascript
+          size="3rem"
+          color="rgba(236, 234, 7, 0.94)"
+          alt="JavaScript"
+        />
       ),
       name: "JavaScript",
     },
     {
-      img: <FaReact color="rgb(13, 226, 240)" alt="react" />,
+      img: <FaReact size="3rem" color="rgb(13, 226, 240)" alt="react" />,
       name: "React",
     },
     {
-      img: <FaNodeJs color="rgb(28, 207, 62)" alt="Node JS" />,
+      img: <FaNodeJs size="3rem" color="rgb(28, 207, 62)" alt="Node JS" />,
       name: "Node JS",
     },
     {
@@ -41,31 +45,37 @@ export const stackData = {
       name: "GraphQl",
     },
     {
-      img: <FaBootstrap color="rgb(70, 38, 110)" alt="bootstrap" />,
+      img: <FaBootstrap size="3rem" color="rgb(70, 38, 110)" alt="bootstrap" />,
       name: "Bootstrap",
     },
     {
-      img: <FaSass color="rgb(237, 58, 225)" alt="sass" />,
+      img: <FaSass size="3rem" color="rgb(237, 58, 225)" alt="sass" />,
       name: "Sass",
     },
   ],
   applicationData: [
     {
       img: (
-        <IoLogoJavascript color="rgba(236, 234, 7, 0.94)" alt="JavaScript" />
+        <IoLogoJavascript
+          size="3rem"
+          color="rgba(236, 234, 7, 0.94)"
+          alt="JavaScript"
+        />
       ),
       name: "JavaScript",
     },
     {
-      img: <FaReact color="rgb(13, 226, 240)" alt="react" />,
+      img: <FaReact size="3rem" color="rgb(13, 226, 240)" alt="react" />,
       name: "React",
     },
     {
-      img: <DiReact color="rgb(121, 224, 231)" alt="React native" />,
+      img: (
+        <DiReact size="3rem" color="rgb(121, 224, 231)" alt="React native" />
+      ),
       name: "R Native",
     },
     {
-      img: <FaNodeJs color="rgb(28, 207, 62)" alt="Node JS" />,
+      img: <FaNodeJs size="3rem" color="rgb(28, 207, 62)" alt="Node JS" />,
       name: "Node JS",
     },
     {
@@ -77,7 +87,7 @@ export const stackData = {
       name: "GraphQl",
     },
     {
-      img: <FaSass color="rgb(237, 58, 225)" alt="sass" />,
+      img: <FaSass size="3rem" color="rgb(237, 58, 225)" alt="sass" />,
       name: "Sass",
     },
     {
@@ -85,20 +95,22 @@ export const stackData = {
       name: "Gatsby",
     },
     {
-      img: <FaBootstrap color="rgb(100, 68, 150)" alt="bootstrap" />,
+      img: (
+        <FaBootstrap size="3rem" color="rgb(100, 68, 150)" alt="bootstrap" />
+      ),
       name: "Bootstrap",
     },
     {
-      img: <FaHtml5 color="rgb(250, 121, 15)" alt="Html5" />,
+      img: <FaHtml5 size="3rem" color="rgb(250, 121, 15)" alt="Html5" />,
       name: "Html5",
     },
     {
-      img: <FaCss3Alt color="rgb(73, 79, 235)" alt="css3" />,
+      img: <FaCss3Alt size="3rem" color="rgb(73, 79, 235)" alt="css3" />,
       name: "CSS3",
     },
 
     {
-      img: <FaMarkdown color="brown" alt="Markdown" />,
+      img: <FaMarkdown size="3rem" color="brown" alt="Markdown" />,
       name: "Markdown",
     },
     {
@@ -108,14 +120,14 @@ export const stackData = {
   ],
   devops: [
     {
-      img: <FaGithub color="lightblue" alt="Github" />,
+      img: <FaGithub size="3rem" color="lightblue" alt="Github" />,
       name: "Github",
     },
     {
-      img: <FaGitSquare color="rgb(250, 121, 15)" alt="Git" />,
+      img: <FaGitSquare size="3rem" color="rgb(250, 121, 15)" alt="Git" />,
       name: "Git",
     },
-    { img: <FaNpm color="tomato" alt="Npm" />, name: "Npm" },
+    { img: <FaNpm size="3rem" color="tomato" alt="Npm" />, name: "Npm" },
     {
       img: <img src={require("../assets/virtualbox.png")} alt="VirtualBox" />,
       name: "VirtualBox",
@@ -134,13 +146,13 @@ export const stackData = {
       name: "Firebase",
     },
     {
-      img: <DiGoogleCloudPlatform color="tomato" alt="gcp" />,
+      img: <DiGoogleCloudPlatform size="3rem" color="tomato" alt="gcp" />,
       name: "GCP",
     },
   ],
   businessTools: [
     {
-      img: <FaSketch color="orange" alt="Sketch" />,
+      img: <FaSketch size="3rem" color="orange" alt="Sketch" />,
       name: "Sketch",
     },
     {
