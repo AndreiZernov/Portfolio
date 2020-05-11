@@ -15,7 +15,7 @@ const TechStackPage = () => {
     <div className="background-image">
       <div className="stack">
         <Link id="btn-back" to="/">
-          <FaArrowAltCircleLeft size="35px" color="silver" alt="go back" />
+          <FaArrowAltCircleLeft color="silver" alt="go back" />
         </Link>
         <h1>My Tech Stack</h1>
         {stackParts.map((part, i) => (

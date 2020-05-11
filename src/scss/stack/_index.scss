@@ -12,7 +12,6 @@
   }
 
   & .applicationData,
-  & .utilities,
   & .devops,
   & .businessTools {
     display: flex;
@@ -28,8 +27,15 @@
       margin: 0 5px;
       transition: 0.5s;
       width: 90px;
+      height: 70px;
       padding: 5px;
       border-radius: 10px;
+
+      & img,
+      & svg {
+        width: 44px;
+        height: 44px;
+      }
 
       & p {
         margin: 0;
@@ -39,7 +45,6 @@
   }
 
   & .applicationData div:hover,
-  & .utilities div:hover,
   & .devops div:hover,
   & .businessTools div:hover {
     border: 0.4px solid silver;
