@@ -3,7 +3,7 @@
   grid-template-areas: "one" "two" "four" "three" "five";
   justify-content: center;
   align-items: center;
-  overflow: auto;
+  overflow-x: hidden;
   margin: auto;
   grid-template-rows: 300px 400px 450px 400px 300px;
   padding: 10px 10px 80px;

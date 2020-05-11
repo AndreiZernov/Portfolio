@@ -15,7 +15,7 @@ body {
   font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.4;
-  overflow-x: scroll;
+  overflow-x: hidden;
   background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     rgb(35, 55, 62) url("../assets/wallpaper3.webp") no-repeat center fixed;
   background-size: cover, cover;
@@ -23,10 +23,6 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (min-width: 768px) {
-    overflow-x: hidden;
-  }
 }
 
 body::-webkit-scrollbar {

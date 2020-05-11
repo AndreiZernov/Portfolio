@@ -13,7 +13,15 @@ const ContactMePage = () => {
         <Link id="btn-back" to="/">
           <FaArrowAltCircleLeft size="35px" color="silver" alt="go back" />
         </Link>
-        <h1>Andrei Zernov</h1>
+        <h1>
+          <a
+            href="https://www.linkedin.com/in/andrei-zernov/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Andrei Zernov
+          </a>
+        </h1>
         <p>Front End Software Engineer</p>
         <div className="cv">
           <h5>CV:</h5>
