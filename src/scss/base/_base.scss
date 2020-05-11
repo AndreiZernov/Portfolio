@@ -16,6 +16,8 @@ body {
   font-size: 1.1rem;
   line-height: 1.4;
   overflow-x: hidden;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    rgb(35, 55, 62) url("../assets/wallpaper.jpg") no-repeat center fixed;
   background: -webkit-radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     rgb(35, 55, 62) url("../assets/wallpaper.jpg") no-repeat center fixed;
   background-size: cover, cover;

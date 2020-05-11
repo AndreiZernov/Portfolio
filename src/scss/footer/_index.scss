@@ -1,11 +1,13 @@
 footer {
   width: 85%;
   margin: auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  max-width: 1100px;
   margin: auto;
 
   & div {
@@ -18,8 +20,6 @@ footer {
   }
 
   @media (min-width: 786px) {
-    max-width: 1100px;
-
     justify-content: space-between;
     width: 100%;
     flex-direction: row;

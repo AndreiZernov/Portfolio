@@ -9,19 +9,19 @@ const FooterContent = [
   {
     id: 0,
     url: "https://github.com/AndreiZernov",
-    img: <FaGithub size="1.7rem" color="white" alt="github" />,
+    img: <FaGithub size="1.7em" color="white" alt="github" />,
     info: "www.github.com/AndreiZernov",
   },
   {
     id: 1,
     url: "https://www.linkedin.com/in/andrei-zernov/",
-    img: <FaLinkedin size="1.7rem" color="white" alt="linkedin" />,
+    img: <FaLinkedin size="1.7em" color="white" alt="linkedin" />,
     info: "www.linkedin.com/in/andrei-zernov",
   },
   {
     id: 2,
     url: "mailto:andrei.zernov@outlook.com",
-    img: <IoMdMailOpen size="1.7rem" color="white" alt="mail" />,
+    img: <IoMdMailOpen size="1.7em" color="white" alt="mail" />,
     info: "andrei.zernov@outlook.com",
   },
 ];
@@ -55,7 +55,7 @@ const ContactLinks = () => (
         </Popover>
       }
     >
-      <AiFillWechat size="1.7rem" color="white" alt="wechat" />
+      <AiFillWechat size="1.7em" color="white" alt="wechat" />
     </OverlayTrigger>{" "}
     <p>Id: AndreiZernov</p>
   </div>
